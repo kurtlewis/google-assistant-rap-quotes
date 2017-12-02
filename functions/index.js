@@ -3,6 +3,7 @@
 process.env.DEBUG = 'actions-on-google:*';
 const App = require('actions-on-google').DialogflowApp;
 const functions = require('firebase-functions');
+const quotes = require('./quotes.js');
 
 // a. the action name from the request_quote Dialogflow intent
 const QUOTE_ACTION = 'request_quote';
@@ -17,10 +18,7 @@ exports.rapQuotes = functions.https.onRequest((request, response) => {
 // c. The function that generates the rap quote
     function requestQuote (app) {
         //let artist = app.getArgument(RAPPER_ARGUMENT);
-        app.tell('Kanye said: "Sometimes people write novels and they just be' 
-                 + ' so wordy and so self-absorbed. I am not a fan of books. I'
-                 + ' would never want a books autograph. I am a proud non-reader'
-                 + ' of books.');
+        app.tell(quotes.getRandomQuote());
     }
     // d. build an action map, which maps intent names to functions
     let actionMap = new Map();
