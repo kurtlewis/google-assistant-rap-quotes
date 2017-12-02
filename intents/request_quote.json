@@ -1,0 +1,76 @@
+{
+  "id": "b2fd1dd6-6d26-4990-bb98-16905162888d",
+  "name": "request_quote",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "request_quote",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1512243213,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "ec75d037-1395-4249-a788-ceea2bb6445f",
+      "data": [
+        {
+          "text": "tell me a rap quote"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "isAuto": false
+    },
+    {
+      "id": "c7341337-12c3-4b07-886c-7e620966c17c",
+      "data": [
+        {
+          "text": "another"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "95495cef-6a60-4914-9982-87ee27c13eba",
+      "data": [
+        {
+          "text": "another one"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "isAuto": false
+    },
+    {
+      "id": "f8dc2c12-62cf-4724-9751-6c19c41e2536",
+      "data": [
+        {
+          "text": "Tell me a quote"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1512243213,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}
