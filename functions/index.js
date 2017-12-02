@@ -18,7 +18,11 @@ exports.rapQuotes = functions.https.onRequest((request, response) => {
 // c. The function that generates the rap quote
     function requestQuote (app) {
         //let artist = app.getArgument(RAPPER_ARGUMENT);
-        app.tell(quotes.getRandomQuote());
+        app.ask(`<speak>`
+                + quotes.getRandomQuote()
+                + `<break time="1s"/>
+                Ask for another or say exit.
+                </speak>`);
     }
     // d. build an action map, which maps intent names to functions
     let actionMap = new Map();
