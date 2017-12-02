@@ -16,8 +16,11 @@ exports.rapQuotes = functions.https.onRequest((request, response) => {
 
 // c. The function that generates the rap quote
     function requestQuote (app) {
-        let artist = app.getArgument(RAPPER_ARGUMENT);
-        app.tell('Kanye said: "Sometimes people write novels and they just be so wordy and so self-absorbed. I am not a fan of books. I would never want a books autograph. I am a proud non-reader of books."');
+        //let artist = app.getArgument(RAPPER_ARGUMENT);
+        app.tell('Kanye said: "Sometimes people write novels and they just be' 
+                 + ' so wordy and so self-absorbed. I am not a fan of books. I'
+                 + ' would never want a books autograph. I am a proud non-reader'
+                 + ' of books.');
     }
     // d. build an action map, which maps intent names to functions
     let actionMap = new Map();
