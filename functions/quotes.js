@@ -8,11 +8,16 @@ quotes.push("DJ Khaled said... You can never run out of keys.");
 quotes.push("DJ Khaled said... Don't ever play yourself.");
 quotes.push("DJ Khaled said... You gotta water your plants. Nobody can water them for you.")
 quotes.push("Drake said... I like sweaters. I have a sweater obsession, I guess.");
+quotes.push("Drake said... A relationship without trust is like a phone without service. and what do you do with a phone that doesn't have service? Play games.")
 quotes.push("Jaden Smith said... If I had a nickel for every time I've cried in the back of an uber, I would have another pair of Yeezy's.")
 quotes.push("Jaden Smith said... Just stare in the mirror and cry and you'll be good.");
 quotes.push("Jaden Smith said... Instagram is not the answer.");
 quotes.push("Jaden Smith said... Yeah yeah, but how many pull ups can you do")
 quotes.push("Jaden Smith said... The grass is always greener on the other side, so stay over there would ya")
+quotes.push("Post Malone said... In order to find yourself, who you really are, you got to be with yourself; you got to hang out with yourself.")
+quotes.push("2 Chainz said... My writ deserve a shout out, I'm like what up wrist? My stove deserve a shout out, I'm like what up stove?");
+quotes.push("Wiz Khalifa said... Bestfriends has 11 letters, but so does Backstabber.");
+quotes.push("Lil Wayne said.. Real gs move in silence like lasagna.");
 
 exports.getRandomQuote = function() {
     return quotes[Math.floor(Math.random() * quotes.length)];
